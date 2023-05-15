@@ -137,3 +137,21 @@ The new provision file should look like this:
 
 ![alt text](assets/deployed-app.png)
 
+## How to setup a reverse proxy
+
+In your app virtual machine, run following commands:
+
+1. `sudo nano /etc/nginx/sites-available/default` and scroll to `location` code block.
+2. In `location` block, add `proxy_pass http://localhost:3000;`
+3. In `location` block, add `proxy_set_header Host $host;`
+4. Change `server_name` to `192.168.1.110`
+
+This should look like this:
+
+![alt text](/tech230_multimachine/assets/rev-prox-nginx.png)
+
+
+
+5. Run `sudo nginx -t` to check for syntax errors
+6. Run `sudo systemctl restart nginx` to restart nginx
+7. Enter `192.168.1.110` in web browser to view the deployed app.
