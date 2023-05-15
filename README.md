@@ -148,7 +148,7 @@ In your app virtual machine, run following commands:
 
 This should look like this:
 
-![alt text](/tech230_multimachine/assets/rev-prox-nginx.png)
+![alt text](./assets/rev-prox-nginx.png)
 
 
 
