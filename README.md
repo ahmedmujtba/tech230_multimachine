@@ -155,3 +155,5 @@ This should look like this:
 5. Run `sudo nginx -t` to check for syntax errors
 6. Run `sudo systemctl restart nginx` to restart nginx
 7. Enter `192.168.1.110` in web browser to view the deployed app.
+
+![alt text](/tech230_multimachine/assets/deployed-rev-proxy.png)
